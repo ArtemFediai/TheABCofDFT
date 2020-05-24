@@ -24,11 +24,6 @@
         &DIAGONALIZATION  ON
           ALGORITHM STANDARD
         &END DIAGONALIZATION
-        &MIXING  T
-          METHOD BROYDEN_MIXING
-          ALPHA 0.4
-          NBROYDEN 8
-        &END MIXING
       &END SCF
     &PRINT
      &MULLIKEN 
