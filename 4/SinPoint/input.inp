@@ -6,14 +6,14 @@
 &FORCE_EVAL
   METHOD Quickstep
     &DFT
-      BASIS_SET_FILE_NAME BASIS_SET 
-      POTENTIAL_FILE_NAME GTH_POTENTIALS
+      BASIS_SET_FILE_NAME BASIS_MOLOPT
+      POTENTIAL_FILE_NAME GTH_POTENTIALS 
       &MGRID
         NGRIDS            4
         CUTOFF            300
         REL_CUTOFF        30
       &END MGRID
-      &XC
+      &XC:
         &XC_FUNCTIONAL PADE
         &END XC_FUNCTIONAL
       &END XC
@@ -52,7 +52,7 @@
   &SUBSYS
     &KIND                 C
       ELEMENT             C
-      BASIS_SET           SZV-GTH-PADE
+      BASIS_SET           SZV-MOLOPT-GTH
       POTENTIAL           GTH-PADE-q4
     &END KIND
     &CELL
