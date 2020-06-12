@@ -1,5 +1,5 @@
 &GLOBAL
-  PROJECT                 6_0_CNT-3periods
+  PROJECT                 13_0_CNT-3periods
   RUN_TYPE                ENERGY
   PRINT_LEVEL             LOW
 &END GLOBAL
@@ -40,7 +40,8 @@
        OVERLAP
        KOHN_SHAM_MATRIX
        FILENAME           ./matrices.ao
-       &EACH 0
+       &EACH 
+         QS_SCF -1
        &END EACH
      &END AO_MATRICES
      &MULLIKEN 
@@ -51,15 +52,15 @@
   &SUBSYS
     &KIND                 C
       ELEMENT             C
-      BASIS_SET           DZVP-GTH-PADE
+      BASIS_SET           SZV-GTH-PADE
       POTENTIAL           GTH-PADE-q4
     &END KIND
     &CELL
-      ABC                 10 12.78 10
+      ABC                 25 12.78 25
     &END CELL
     &TOPOLOGY
       COORD_FILE_FORMAT   XYZ
-      COORD_FILE_NAME     6_0_CNT-3periods.xyz
+      COORD_FILE_NAME     13_0_CNT-3periods.xyz
     &END TOPOLOGY
     !&COORD
     !&END COORD
