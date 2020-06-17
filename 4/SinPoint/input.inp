@@ -39,7 +39,7 @@
      &AO_MATRICES
        OVERLAP
        KOHN_SHAM_MATRIX
-       FILENAME           ./matrices.ao
+       FILENAME           =./matrices.ao
        &EACH 
          QS_SCF -1
        &END EACH
