@@ -1,0 +1,36 @@
+---
+System name: 12_0_CNT_3periods
+Number of energy points : 500
+Lower energy border : -1.5
+Upper energy border : 1.5
+Spin Polarized system : n
+Name of the CP2K ao matrices: matrices.ao 
+Name of the .out CP2K file : out.out
+Name of the .pdos alpha CP2K file : out.out
+Name of the .pdos beta CP2K file : out.out
+Central system : 
+  - first atom : 49
+  - last atom : 96
+Leads : 
+  - first atom left Lead : 1
+  - last atom left Lead : 48
+  - first atom right Lead : 97
+  - last atom right Lead : 144
+Number of periods on the Leads: 1
+Total number of atoms in the system: 144
+Small imaginary part : 0.001
+Path to CP2K ao matrices : "CP2Kfiles/12_0_CNT_3periods/"
+Path to the system 14-matrices : "system_14_matrices/12_0_CNT_3periods/Input"
+Path of output : "Output/12_0_3periods-3eVrange"
+###
+Differential conductance calculation: no
+Number of sd-voltage points: 900
+Number of gs-voltage points: 500
+Lower source-drain voltage: -0.005
+Upper source-drain voltage: 0.005
+Lower gate-source voltage: -0.5
+Upper gate-source voltage: 1.5
+Projected DOS: n
+first atom to ignore: 1
+last atom to ignore: 2
+Temperature in Kelvin: 0.5
