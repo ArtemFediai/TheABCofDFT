@@ -56,7 +56,7 @@
       POTENTIAL           GTH-PADE-q4
     &END KIND
     &CELL
-      ABC                 25 12.78 25
+      ABC                 25 25 12.78
     &END CELL
     &TOPOLOGY
       COORD_FILE_FORMAT   XYZ
