@@ -1,7 +1,7 @@
 &GLOBAL
   PROJECT                 13_0_CNT-3periods
   RUN_TYPE                ENERGY
-  PRINT_LEVEL             LOW
+  PRINT_LEVEL             MEDIUM
 &END GLOBAL
 &FORCE_EVAL
   METHOD Quickstep
